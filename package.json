@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack",
+    "build": "webpack -p",
+    "start": "npm run server",
     "dev": "webpack-dev-server --open",
     "db": "mongod --config /usr/local/etc/mongod.conf",
     "initialize": "babel-node src/server/initialize-db",
